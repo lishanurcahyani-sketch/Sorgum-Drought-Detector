@@ -1,7 +1,7 @@
-streamlit==1.28.1
-roboflow==1.1.20
-opencv-python==4.8.1.78
-numpy==1.24.3
-pillow==10.0.0
-python-dotenv==1.0.0
-requests==2.31.0
+streamlit>=1.40.0
+roboflow>=1.1.45
+opencv-python>=4.10.0
+numpy>=1.26.0
+pillow>=10.0.0
+python-dotenv>=1.0.0
+requests>=2.31.0
