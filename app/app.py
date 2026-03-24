@@ -124,9 +124,9 @@ st.markdown("""
         border-radius: 50%;
     }
     
-    .healthy { background: #27ae60; }
-    .moderate { background: #f39c12; }
-    .severe { background: #e74c3c; }
+    .daun segar { background: #27ae60; }
+    .kekeringan ringan { background: #f39c12; }
+    .kekeringan berat { background: #e74c3c; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -140,11 +140,11 @@ with col2:
     with tab_col1:
         st.markdown("[**Home**](#)")
     with tab_col2:
-        st.markdown("[**Upload Image**](#)")
+        st.markdown("[**Unggah Gambar**](#)")
     with tab_col3:
-        st.markdown("[**Results**](#)")
+        st.markdown("[**Hasil**](#)")
     with tab_col4:
-        st.markdown("[**About**](#)")
+        st.markdown("[**Tentang**](#)")
 
 with col3:
     if st.button("🔐 Login", key="login_btn"):
@@ -158,7 +158,7 @@ col_left, col_right = st.columns([1, 1], gap="large")
 # LEFT COLUMN - Upload
 with col_left:
     st.markdown("### Sorghum Leaf Drought Detector")
-    st.write("Upload an image of sorghum leaves to detect drought symptoms using AI.")
+    st.write("unggah gambar daun sorghum untuk mendeteksi gejala kekeringan menggunakan AI.")
     st.markdown("⚡ **AI Model:** YOLOV8")
     
     st.markdown("")
@@ -180,9 +180,9 @@ with col_left:
         
         # Simulated results (replace dengan Roboflow API call)
         results_data = {
-            "Healthy Leaf": {"confidence": 0.92, "count": 2, "color": "🟢"},
-            "Moderate Drought": {"confidence": 0.85, "count": 2, "color": "🟡"},
-            "Severe Drought": {"confidence": 0.79, "count": 1, "color": "🔴"}
+            "Daun Segar": {"confidence": 0.92, "count": 2, "color": "🟢"},
+            "Kekeringan Ringan": {"confidence": 0.85, "count": 2, "color": "🟡"},
+            "Kekeringan Berat": {"confidence": 0.79, "count": 1, "color": "🔴"}
         }
         
         # Results table
@@ -211,7 +211,7 @@ with col_left:
 
 # RIGHT COLUMN - Example result
 with col_right:
-    st.markdown("### 👤 Example Result")
+    st.markdown("### 🔎 Hasil analisis Deteksi")
     
     # Example image (placeholder)
     st.markdown("""
@@ -230,16 +230,16 @@ with col_right:
     st.markdown("""
     <div class="legend">
         <div class="legend-item">
-            <div class="legend-dot healthy"></div>
-            <span>Healthy</span>
+            <div class="legend-dot daun segar"></div>
+            <span>Daun Segar</span>
         </div>
         <div class="legend-item">
-            <div class="legend-dot moderate"></div>
-            <span>Moderate Drought</span>
+            <div class="legend-dot kekeringan ringan"></div>
+            <span>Kekeringan Ringan</span>
         </div>
         <div class="legend-item">
-            <div class="legend-dot severe"></div>
-            <span>Severe Drought</span>
+            <div class="legend-dot kekeringan berat"></div>
+            <span>Kekeringan Berat</span>
         </div>
     </div>
     """, unsafe_allow_html=True)
