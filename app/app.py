@@ -7,7 +7,7 @@ import requests
 # Add parent directory to path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from utils.roboflow_utils import DroughtDetector
+from utils.roboflow_utils import Drought_on_sorghum_leaves
 from config import (
     STREAMLIT_PAGE_TITLE,
     STREAMLIT_PAGE_ICON,
