@@ -5,7 +5,7 @@ load_dotenv()
 
 # Roboflow Configuration
 ROBOFLOW_API_KEY = os.getenv("ROBOFLOW_API_KEY", "rf_FwwkOW2utJUXL7TuLflGWQtUO183")
-ROBOFLOW_WORKSPACE = os.getenv("ROBOFLOW_WORKSPACE", "lishanurcahyani-sketch")
+ROBOFLOW_WORKSPACE = os.getenv("ROBOFLOW_WORKSPACE", "sorghumdrought")
 ROBOFLOW_PROJECT = os.getenv("ROBOFLOW_PROJECT", "drought_on_sorghum_leaves")
 ROBOFLOW_MODEL_VERSION = os.getenv("drought_on_sorghum_leaves/4")
 
