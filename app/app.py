@@ -15,7 +15,7 @@ from utils.roboflow_utils import predict_image, draw_predictions, summarize_pred
 
 
 st.set_page_config(
-    page_title="Sorghum Leaf Drought Detector",
+    page_title="Sorghum Drought Detector",
     page_icon="🌾",
     layout="wide",
     initial_sidebar_state="collapsed"
@@ -290,7 +290,7 @@ st.markdown("""
     <div class="brand">
         <div class="brand-icon">🌾</div>
         <div>
-            <div class="brand-title">Sorghum Leaf Drought Detector</div>
+            <div class="brand-title">Sorghum Drought Detector</div>
             <div class="brand-subtitle">Smart detection for drought symptoms on sorghum leaves</div>
         </div>
     </div>
